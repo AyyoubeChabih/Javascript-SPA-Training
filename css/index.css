@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 70%;
+    min-height: 200px;
+    background-color: #FBF8EF;
+    margin: 0 auto;
+    padding: 0px;
+    color: #353E4A;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Garamond, times new roman;
+    border-radius: 20px;
+}
+
+.container > .header {
+    background-color: #04D0D9;
+    height: 180px;
+}
+
+.container > .header > .h {
+    padding-top: 20px;
+    text-align: center;
+    color: #353E4A;
+}
+
+.container > .header > .h > span {
+    font-size: 38px;
+}
+
+.container > .header > .menu {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.container > .header > .menu > span {
+    cursor: pointer;
+}
+
+.item:hover {
+    background-color: #05a8af;
+}
+
+.item {
+    padding: 15px;
+    background-color: inherit;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 2px solid #353E4A;
+    color: #353E4A;
+    margin-left: 7px;
+}
+
+.input {
+    padding: 7px;
+    width: 100%;
+    border: 1px solid #e4e4e4;
+    border-radius: 20px;
+    font: inherit;
+    padding-left: 20px;
+}
+
+.btn {
+    padding: 7px;
+    width: 100px;
+    border: gray;
+    border-radius: 20px;
+    font: inherit;
+    cursor: pointer;
+    background-color: #9ACB34;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #8bb730;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.body {
+    min-height: 500px;
+}
+
+.body > .title > span {
+    font-size: 24px;
+    display: block;
+}
+
+.body > .title {
+    width: 40%;
+    padding: 10px;
+    background-color: #eae8e1;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.col-01, .col-02, .col-03, .col-04 {
+    display: inline-block;
+    text-align: center;
+}
+
+.col-01, .col-03 {
+    width: 10%;
+}
+
+.col-02, .col-04 {
+    width: 24%;
+}
+
+.col-03 {
+    margin-left: 10%;
+}
+
+#success, #error {
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    color: #353E4A;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#success {
+    background-color: #9ACB34;
+}
+
+#error {
+    background-color: #ff4747;
+}
+
+.active {
+    background-color: #05a8af;
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#searchBook > div {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#searchBook > div > .input {
+    width: 40%;
+}

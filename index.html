@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Index</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css" />
+	<link rel="stylesheet" href="css/table.css" type="text/css" />
+	<script src="js/models/Book.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/db/Biblio.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/dao/DAO.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/business/Service.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/View.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/Action.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/Controller.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/Context.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/Request.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/Main.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<div class="h">
+				<span>Gestion de Bibliothèque</span>
+			</div>
+			<div class="menu">
+				<span onclick="show('addBook')">
+					<span id="addBook-menu-item" class="item active">
+						Ajouter un livre
+					</span>
+				</span>
+				<span onclick="show('booksList'); booksList();">
+					<span id="booksList-menu-item" class="item">
+						Liste des livres
+					</span>
+				</span>
+				<span onclick="show('searchBook')">
+					<span id="searchBook-menu-item" class="item">
+						Chercher un livre
+					</span>
+				</span>
+			</div>
+		</div>
+		<div class="body">
+			<div id="success" class="hidden" onclick="hide('success')">livre ajouté avec succée</div>
+			<div id="error" class="hidden" onclick="hide('error')">Error</div>
+			<div class="title">
+				<span id="title">Ajouter un livre</span>
+			</div>
+
+			<!-- Add a book -->
+			<div id="addBook">
+				<div class="row">
+					<div class="col-01">
+						<span>ID : </span>
+					</div>
+					<div class="col-02">
+						<input type="text" class="input" id="id">
+					</div>
+					<div class="col-03">
+						<span>Title : </span>
+					</div>
+					<div class="col-04">
+						<input type="text" class="input" id="titl">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-01">
+						<span>Price : </span>
+					</div>
+					<div class="col-02">
+						<input type="text" class="input" id="price">
+					</div>
+					<div class="col-03">
+						<span>Year published : </span>
+					</div>
+					<div class="col-04">
+						<input type="text" class="input" id="year_published">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-01"></div>
+					<div class="col-02"></div>
+					<div class="col-03"></div>
+					<div class="col-04">
+						<input type="button" class="btn" onclick="addBook()" value="Valider">
+					</div>
+				</div>
+			</div>
+
+			<!-- books list -->
+			<div class="hidden" id="booksList">
+				<div>
+					<div class="table" id="table">
+					</div>
+				</div>
+			</div>
+
+			<!-- Search a book -->
+			<div class="hidden" id="searchBook">
+				<div>
+					<input type="text" class="input" id="keyword" onkeyup="search()" placeholder="Rechercher un livre ..">
+				</div>
+				<div>
+					<div class="table" id="search-table">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+.th {
+    background-color: #8FB9A8;
+    padding: 15px;
+    display: inline-block;
+    width: 20%;
+}
+
+.td {
+    color: #765D69;
+    padding: 15px;
+    display: inline-block;
+    width: 20%;
+}
+
+.table {
+    text-align: center;
+}
